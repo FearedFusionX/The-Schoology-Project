@@ -1,0 +1,131 @@
+<body id="ixo6">
+  <header id="ixs4" class="header-banner">
+    <div id="iezl" class="container-width">
+      <div id="igx7" class="logo-container">
+        <div id="ixg6" class="logo">GrapesJS
+        </div>
+      </div>
+      <nav id="izo3" class="menu">
+      </nav>
+      <div class="clearfix">
+      </div>
+      <div id="i9n3u" class="lead-title">The Ultimate Schoology Enhancement Project.
+      </div>
+      <div id="i44xo" class="sub-lead-title">Schoology, Reimagined with style. 
+      </div>
+      <div id="i2raw" class="lead-btn">Hover me
+      </div>
+    </div>
+  </header>
+  <section id="i0gpe" class="flex-sect">
+  </section>
+  <section id="iwruu" class="am-sect">
+    <div id="i4cx7">
+      <div role="tablist" id="ipk31g" class="tab-container">
+        <div role="tab" aria-controls="igpra5" id="ikky9i" class="tab">
+          <span id="ib0a48">Home</span>
+        </div>
+        <div role="tab" aria-controls="i7o84i" id="iu6ike" class="tab">
+          <span id="ix3pi6">Tab</span>
+        </div>
+        <div role="tab" aria-controls="il2zuy" id="ixcs35" class="tab">
+          <span>Tab</span>
+        </div>
+      </div>
+      <div id="id56wj" class="tab-contents">
+        <div role="tabpanel" id="igpra5" aria-labelledby="ikky9i" hidden class="tab-content">
+          <div id="irt50q" class="gjs-row">
+            <div id="iylz1k" class="gjs-cell">
+            </div>
+          </div>
+          <div id="ihsq8f" title="">Schoology, From a new perspective.
+            <span id="igza5i"></span>
+          </div>
+        </div>
+        <div role="tabpanel" id="i7o84i" aria-labelledby="iu6ike" hidden class="tab-content">
+          <div class="gjs-row" id="irfd8">
+            <div class="gjs-cell" id="itjk2">
+              <video allowfullscreen="allowfullscreen" id="i0cm5" src="img/video2.webm" loop="loop">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" id="il2zuy" aria-labelledby="ixcs35" hidden class="tab-content">
+          <div class="gjs-row" id="iusfv">
+            <div class="gjs-cell" id="iy8aa">
+            </div>
+          </div>
+          <div>Tab Content
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-width">
+    </div>
+  </section>
+  <footer id="igudul" class="footer-under">
+    <div class="container-width">
+    </div>
+    <div id="i8fi0l" class="copyright">
+      <div class="container-width">
+        <div class="made-with">
+          made with GrapesJS
+        </div>
+        <div class="foot-social-btns">facebook twitter linkedin mail
+        </div>
+        <div class="clearfix">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>var props = {
+    "i4cx7":{
+      "classactive":"tab-active","selectortab":"aria-controls"}
+  };
+  var ids = Object.keys(props).map(function(id) {
+    return '#'+id }
+                                  ).join(',');
+  var els = document.querySelectorAll(ids);
+  for (var i = 0, len = els.length; i < len; i++) {
+    var el = els[i];
+    (function(t){
+      var e,n,r=this,o=t.classactive,a=t.selectortab,c=window,i=c.history,s=c._isEditor,b='[role=tab]',p=document,l=p.body,u=p.location,f=l.matchesSelector||l.webkitMatchesSelector||l.mozMatchesSelector||l.msMatchesSelector,y=function(t,e){
+        for(var n=t||[],r=0;r<n.length;r++)e(n[r],r)}
+      ,d=function(t){
+        return t.getAttribute(a)}
+      ,O=function(t,e){
+        return t.querySelector(e)}
+      ,g=function(){
+        return r.querySelectorAll(b)}
+      ,j=function(t,e){
+        return!s&&(t.tabIndex=e)}
+      ,h=function(t){
+        y(g(),(function(t){
+          t.className=t.className.replace(o,'').trim(),t.ariaSelected='false',j(t,'-1')}
+              )),y(r.querySelectorAll("[role=tabpanel]"),(function(t){
+          return t.hidden=!0}
+                                                         )),t.className+=' '+o,t.ariaSelected='true',j(t,'0');
+        var e=d(t),n=e&&O(r,"#".concat(e));
+        n&&(n.hidden=!1)}
+      ,v=O(r,".".concat(o).concat(b));
+      (v=v||(n=(u.hash||'').replace('#',''))&&O(r,(e=a,"".concat(b,"[").concat(e,"=").concat(n,"]")))||O(r,b))&&h(v),r.addEventListener('click',(function(t){
+        var e=t.target,n=f.call(e,b);
+        if(n||(e=function(t){
+          var e;
+          return y(g(),(function(n){
+            e||n.contains(t)&&(e=n)}
+                       )),e}
+               (e))&&(n=1),n&&!t.__trg&&e.className.indexOf(o)<0){
+          t.preventDefault(),t.__trg=1,h(e);
+          var r=d(e);
+          try{
+            i&&i.pushState(null,null,"#".concat(r))}
+          catch(t){
+          }
+        }
+      }
+                                                                                                                                                ))}
+     .bind(el))(props[el.id]);
+  }
+</script>
